@@ -6,6 +6,7 @@ $this->inc('inc/top.php'); ?>
         <strong>Loading gallery</strong>
         <img alt="Loading gallery" title="Loading gallery" src="<?php echo $this->getThemePath();?>/img/ajax-loader.gif">
       </div>
+      <div class="content"><h2></h2></div>
     </aside>
     <section id="slideshow">
         <ul>
