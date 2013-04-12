@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 
-    <script type="text/javascript" src="scripts.js"></script> 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 
     <title>Sarah Virag Photography</title>
 </head>
 <body>
+    <div id="sidebar">
     <header>
-        <img src="logo.png" title="Sarah Virag Photography">
+        <div id="logo"><img src="img/logo.DELETEME.jpg" title="Sarah Virag Photography"></div>
         <h1>Sarah Virag Photography</h1>
     </header>
     <nav><ul> 
@@ -19,14 +22,28 @@
         <li><a href="#">Contact</a></li>
         <li><a href="#">Blog</a></li>
     </ul></nav>
-    <section id="slideshow">
-        <aside id="infobox"></aside>
-        <div class="image-wrap"><img src="" alt="" title=""></div>
-    </section>
     <footer>
         <a class="social-icon" href="#" title="" alt=""></a>
         <a class="social-icon" href="#" title="" alt=""></a>
         <a class="social-icon" href="#" title="" alt=""></a>
     </footer>
+    </div>
+
+    <aside id="infobox"><h2></h2></aside>
+    <section id="slideshow">
+        <ul>
+        <li class="image-wrap active"><img src="img/pic1.DELETEME.jpg" alt="" title="Some buildings by a river"></li><!--
+        --><li class="image-wrap"><img src="img/pic2.DELETEME.jpg" alt="" title="Falling flowers"></li><!--
+        --><li class="image-wrap"><img src="img/pic3.DELETEME.jpg" alt="" title="Wow, look at that fucking boat"></li><!--
+        --><li class="image-wrap"><img src="img/pic3.DELETEME.jpg" alt="" title="Wow, look at that fucking boat"></li><!--
+        --><li class="image-wrap"><img src="img/pic3.DELETEME.jpg" alt="" title="Wow, look at that fucking boat"></li><!--
+        --><li class="image-wrap"><img src="img/pic3.DELETEME.jpg" alt="" title="Wow, look at that fucking boat"></li><!--
+        --><li class="image-wrap"><img src="img/pic3.DELETEME.jpg" alt="" title="Wow, look at that fucking boat"></li><!--
+        --><li class="image-wrap endpiece"><img src="img/pic1.DELETEME.jpg" title="Some buildings by a river"></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript" src="underscore-min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
