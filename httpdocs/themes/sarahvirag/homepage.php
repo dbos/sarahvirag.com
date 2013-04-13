@@ -1,6 +1,9 @@
 <?php  
 defined('C5_EXECUTE') or die("Access Denied.");
-$this->inc('inc/top.php'); ?>
+$this->inc('inc/top.php');
+Loader::model('gallery');
+echo '<script>sv_gallery='.json_encode(Gallery::getIndex()).'</script>';
+?>
     <aside id="infobox" class="loading">
       <div class="loader">
         <strong>Loading gallery</strong>
