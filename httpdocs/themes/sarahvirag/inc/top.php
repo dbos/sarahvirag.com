@@ -26,10 +26,6 @@
       <div class="marker circle"></div>
       <ul>
         <li><a href="#" class="circle"></a></li>
-        <li><a href="#" class="circle"></a></li>
-        <li><a href="#" class="circle"></a></li>
-        <li><a href="#" class="circle"></a></li>
-        <li><a href="#" class="circle"></a></li>
       </ul>
     </div>
     </div>
