@@ -1,7 +1,7 @@
 /*
 */
-
-  jQuery(window).load(function () {
+//jQuery.easing.easeInOutCirc=function(t,i){console.log(arguments);return .5>t?i(2*t)/2:1-i(-2*t+2)/2;}
+jQuery(window).load(function () {
 //    return false;
     jQuery('#slideshow ul').show();
     slideImage(0,0);
@@ -56,9 +56,12 @@
  
   function updateAside ($ele) {
     var $aside = jQuery('aside');
-    var title = $ele.find('img').attr('title');
+    var $img = $ele.find('img');
+
+    var title = $img.attr('title');
+    var subtitle = $img.data('subtitle');
     /* this will update all the info in the aside */
-    $aside.find('.content h2').text(title); 
+    $aside.find('.content h2').text(title).siblings('.subtitle').text(subtitle);
   }
 
   function resizeLayout_unfiltered () {
@@ -89,11 +92,11 @@
     jQuery('aside').removeClass('loading').find('.loader strong').text('Resizing gallery'); 
     jQuery('#legend ul').animate({'margin-top':-(cur==total?0:cur)*30}, slideDuration*.75);
     jQuery('#slideshow ul').animate({'margin-top':-cur*curHeight}, slideDuration, 'easeInOutCirc', function () {
-      if (cur <= 0) {
+    /*  if (cur <= 0) {
         cur = total;
       } else if (cur >= total) {
         cur = 0;
-      }
+      }*/
       $images.eq(cur).addClass('active').parent().css('margin-top', -cur*curHeight);
       updateAside(jQuery('.image-wrap.active'));
       console.log('cur', cur);
