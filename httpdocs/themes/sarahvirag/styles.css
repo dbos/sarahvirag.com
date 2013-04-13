@@ -20,7 +20,7 @@ strong { font-weight: 100; }
   float: left;
   position: fixed;
   z-index: 500;
-  background: url(img/escheresque.png) repeat 0 0;
+  background: url(img/patterns/escheresque.png) repeat 0 0;
   box-shadow: 0 0 5px rgba(64,64,64,0.9);
   border-right: 1px solid rgba(144,144,144,0.8);
 }
@@ -102,11 +102,11 @@ strong { font-weight: 100; }
   margin-left: 250px;
   overflow: hidden;
   position: relative;
-  background: url(img/starring.png) repeat 0 0;
+  background: url(img/patterns/starring.png) repeat 0 0;
 }
   #slideshow ul { display: none; }
   aside {
-    background: rgba(112,112,112,0.8) /*url(img/perforated_white_leather.png)*/ repeat 0 0;
+    background: rgba(112,112,112,0.8) /*url(img/patterns/perforated_white_leather.png)*/ repeat 0 0;
     border:1px solid rgba(0,0,0,0.6);
     position: absolute;
     z-index: 1001;
