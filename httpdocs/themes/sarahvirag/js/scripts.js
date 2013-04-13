@@ -68,7 +68,7 @@
     jQuery('aside').removeClass('loading');
   }
   var resizeLayout_debounced = _.debounce(resizeLayout_unfiltered, 500);
-  var resizeLayout = function () { jQuery('aside').addClass('loading');$('#slideshow ul').hide();resizeLayout_debounced();}
+  var resizeLayout = function () { jQuery('aside').addClass('loading');jQuery('#slideshow ul').hide();resizeLayout_debounced();}
  
   function slideImage_unfiltered (dir,target) {
     var $images = jQuery('#slideshow li');
