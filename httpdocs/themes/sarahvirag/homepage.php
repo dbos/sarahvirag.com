@@ -1,6 +1,9 @@
 <?php  
 defined('C5_EXECUTE') or die("Access Denied.");
-$this->inc('inc/top.php'); ?>
+$this->inc('inc/top.php');
+Loader::model('gallery');
+echo '<script>sv_gallery='.json_encode(Gallery::getIndex()).'</script>';
+?>
     <aside id="infobox" class="loading">
       <div class="controls">
         <a href="#" class="prev" rel="prev"><span>Previous</span></a>

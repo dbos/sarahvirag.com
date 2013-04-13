@@ -3,7 +3,6 @@
 <html lang="<?php echo LANGUAGE?>">
 <head>
     <?php
-    $this->addHeaderItem($html->javascript("http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"));
     Loader::element('header_required');
     ?>
     <link rel="stylesheet" type="text/css" href="<?php  echo $this->getStyleSheet('reset.css')?>">
