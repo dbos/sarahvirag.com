@@ -15,13 +15,17 @@
         <div class="centered" id="logo"><img src="<?php echo $this->getThemePath();?>/img/logo.DELETEME.jpg" title="Sarah Virag Photography"></div>
         <h1 class="centered">Sarah Virag Photography</h1>
     </header>
-    <nav class="centered"><ul> 
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Blog</a></li>
-    </ul></nav>
+    <nav class="centered"> 
+	<?php
+
+	$nav = BlockType::getByHandle('autonav');
+	$nav->controller->displayPages = 'top';
+        $nav->controller->displaySubPages = 'all';
+	$nav->controller->displaySubPagesLevels = 'all';
+	$nav->render('templates/custom_nav');
+
+	?>
+    </nav>
     <div id="legend">
       <div class="marker circle"></div>
       <ul>

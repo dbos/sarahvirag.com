@@ -61,9 +61,9 @@ _.each(sv_gallery.results, function (element, index, list) {
     init_slideshow();
     this.find('li:first-child').clone().appendTo(this).removeClass('active');
   } else {
-    $('#legend ul li:first-child').clone().appendTo('#legend ul');
+    jQuery('#legend ul li:first-child').clone().appendTo('#legend ul');
   }
-}, $('#slideshow ul'));
+}, jQuery('#slideshow ul'));
 
 function init_slideshow () {
     jQuery('#slideshow ul').show();
@@ -106,5 +106,3 @@ function init_slideshow () {
   });
   jQuery(this).on('resize', resizeLayout);
 }
-
-
